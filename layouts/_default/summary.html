@@ -1,0 +1,13 @@
+<li>
+	<div class="d-flex justify-content-between">
+		<div>
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</div>
+		<div>
+			<time>{{ .Date.Format "January 01 2006" }}</time>
+		</div>
+   </div>
+   <div>
+	   <p>{{.Params.subtitle}}</p>
+   </div>
+</li>

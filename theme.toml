@@ -1,0 +1,8 @@
+name = "Jackie"
+license = "MIT"
+description = "Jacqueline Nolis' modification of the vimux blank theme"
+homepage = "https://github.com/vimux/blank/"
+
+[author]
+  name = "Jacqueline Nolis"
+  homepage = "https://github.com/jnolis"

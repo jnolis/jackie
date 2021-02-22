@@ -1,0 +1,38 @@
+<header>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			{{ with .Site.Menus.main }}
+			{{ range . }}
+			<li><a class="nav-link" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+			{{ end }}
+			{{ end }}
+			<li class="nav-item">
+				<a class="nav-link" href="https://twitter.com/skyetetra">
+				  <i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://github.com/jnolis">
+				  <i class="fab fa-github"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.linkedin.com/in/jnolis/">
+				  <i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://instagram.com/skyetetra">
+				  <i class="fab fa-instagram"></i>
+				</a>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+</header>

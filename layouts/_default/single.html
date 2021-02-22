@@ -1,0 +1,18 @@
+{{ define "main" }}
+	<main>
+		<article class="container pt-3">
+			<h1>{{ .Title }}</h1>
+			{{ if isset .Page.Params "subtitle" }}
+			<h4 class="text-muted">{{.Params.subtitle}}</h3> 
+			{{end}}
+			{{ if ne .Type "page" -}}
+			<div class="post-date">
+			  <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> · {{ .ReadingTime }} min read
+			</div>
+			{{- end }}
+			<div class="pt-3">
+				{{ .Content }}
+			</div>
+		</article>
+	</main>
+{{ end }}

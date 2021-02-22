@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main aria-role="main">
+	<div class="welcome-splash welcome-splash-text p-3 text-center">
+		<h1 class="display-3">{{.Title}}</h1>
+		<h4 class="subtitle display-5">{{.Params.subtitle}}</span>
+		<div class="row justify-content-center pt-3">
+			<div class="col-md-3 col-sm-4 col-8">
+				<img src="images/jacqueline-profile-sq.jpg" class="img-fluid img-circle img-headshot"
+					alt="Jacqueline Nolis">
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-3">
+		{{.Content}}
+	</div>
+</main>
+{{ end }}
